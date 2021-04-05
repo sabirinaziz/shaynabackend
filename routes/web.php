@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::resource('products', 'App\Http\Controllers\ProductController');
 
